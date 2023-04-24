@@ -87,7 +87,7 @@ const getRoute = (req: Request) => {
     const route = req.route ? req.route.path : '';
     const baseUrl = req.baseUrl ? req.baseUrl : '';
 
-    return route ? `${baseUrl === '/' ? '' : baseUrl}${route}` : '/';
+    return route ? `${baseUrl === '/' ? '' : baseUrl}${route}` : req.originalUrl;
 }
 
 const getStats = async (route: string, type: string, status: number, timestamp: number) => {
