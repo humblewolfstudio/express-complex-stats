@@ -1,15 +1,21 @@
 {
   "name": "express-complex-stats",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Complex stats for your express API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prestart": "npm run build",
     "start": "tsc | node ./dist/index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "analytics",
+    "count-requests",
+    "middleware"
+  ],
+  "author": "HumbleWolfStudio <[humblewolfstudio@gmail.com](mailto:humblewolfstudio@gmail.com)>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
@@ -19,5 +25,9 @@
     "@types/express": "^4.17.17",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/humblewolfstudio/random-phrases-any-language"
   }
 }
