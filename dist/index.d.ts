@@ -7,4 +7,4 @@ export interface ComplexStats {
     router: express.Router;
 }
 
-export declare function Stats(password: string, options?: { timestamp: timestamp }): ComplexStats;
+export declare function ComplexStats(password: string, options?: { timestamp: timestamp }): ComplexStats;
