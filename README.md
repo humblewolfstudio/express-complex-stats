@@ -41,7 +41,7 @@ app.listen(3000, () => {
 The data is stored in an sqlite using typeorm.
 
 ## How to view the data?
-You can use the /stats endpoint to view the data. You can also add query parameters to return only the data that you want to view. You have to add the key as a header.
+You can use the `/stats` endpoint to view the data. You can also add query parameters to return only the data that you want to view. You have to add the key as a header.
 
 The query parameters you can use are: 
 - route (string)
