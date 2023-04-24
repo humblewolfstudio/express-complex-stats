@@ -90,7 +90,7 @@ const createPetition = (time, route, type, status, timestamp) => __awaiter(void 
 const getRoute = (req) => {
     const route = req.route ? req.route.path : '';
     const baseUrl = req.baseUrl ? req.baseUrl : '';
-    return route ? `${baseUrl === '/' ? '' : baseUrl}${route}` : '/';
+    return route ? `${baseUrl === '/' ? '' : baseUrl}${route}` : req.originalUrl;
 };
 const getStats = (route, type, status, timestamp) => __awaiter(void 0, void 0, void 0, function* () {
     return yield statsRepository.find({
