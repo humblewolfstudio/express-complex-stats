@@ -19,7 +19,7 @@ Then you define an endpoint for getting the stats and you include the middleware
 
 ```js
 import express, { Request, Response } from "express";
-import { ComplexStats } from "./express-complex-stats";
+import { ComplexStats } from "express-complex-stats";
 
 const app = express();
 
