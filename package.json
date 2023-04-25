@@ -1,6 +1,6 @@
 {
   "name": "express-complex-stats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Complex stats for your express API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
