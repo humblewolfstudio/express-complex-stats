@@ -1,13 +1,13 @@
 {
   "name": "express-complex-stats",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Complex stats for your express API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "tsc | node ./dist/index.ts"
+    "start": "tsc | node ./dist/index.js"
   },
   "keywords": [
     "express",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
     "typeorm": "^0.3.15"
   },
   "devDependencies": {
